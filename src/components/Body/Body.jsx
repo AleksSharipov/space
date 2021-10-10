@@ -11,7 +11,7 @@ export default function Body({ items }) {
       <div className="body__menu">
         <ul>
           <li>100.00 ₽</li>
-          <li><img src={info} /><span>1</span>vikavishny</li>
+          <li><img src={info} alt="увеломление" /><span>1</span>vikavishny</li>
           <li>Выйти</li>
         </ul>
       </div>
@@ -27,7 +27,7 @@ export default function Body({ items }) {
             return (
               <div key={name} className="body__item">
                 <details>
-                  <summary>{name} <img src={arrow} /></summary>
+                  <summary>{name} <img src={arrow} alt="arrow" /></summary>
                   <div>
                     {content}
                   </div>

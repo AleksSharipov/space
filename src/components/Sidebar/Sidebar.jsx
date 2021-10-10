@@ -40,7 +40,7 @@ export default function Sidebar() {
       <ul className="sidebar__menu">
         {
           menuSidebar.map(item => {
-            return <li key={item.types} className={item.types == 'Logbook' ? `sidebar__item active` : `sidebar__item`}><img src={item.img} /> {item.value}</li>
+            return <li key={item.types} className={item.types === 'Logbook' ? `sidebar__item active` : `sidebar__item`}><img src={item.img} alt={item.value} /> {item.value}</li>
           })
         }
       </ul>

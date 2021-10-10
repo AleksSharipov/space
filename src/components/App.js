@@ -1,6 +1,4 @@
-import React, { useEffect } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
-import { fetchContent } from '../redux/actions/items';
+import React from 'react';
 
 import './app.css';
 import Footer from './Footer/Footer';
