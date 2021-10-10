@@ -1,0 +1,139 @@
+.body {
+  max-width: 1070px;
+  width: 100%;
+  margin: 0 20px;
+
+  &__menu {
+    margin-top: 24px;
+    ul{
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      width: 100%;
+
+      li{
+        display: flex;
+        flex-direction: row;
+        align-items:center;
+        margin-left: 30px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 15px;
+        color: #7A8185;
+        cursor: pointer;
+        position: relative;
+
+        img {
+          margin-right: 9px;
+        }
+
+        span {
+          position: absolute;
+          background: #D0021B;
+          border-radius: 50%;
+          width: 12px;
+          height: 12px;
+          color:#FFFFFF;
+          // text-align: center;
+          left: 9px;
+          bottom: 6px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        &:hover {
+          color: #000000;
+        }
+      }
+    }
+  }
+
+  &__content {
+    margin-top: 20px;
+    max-width: 1030px;
+    width: 100%;
+    max-height: 80vh;
+    background: #FFFFFF;
+    box-shadow: 1px 1px 4px #E3E9EC;
+    // padding: 16px 0 16px 20px;
+    overflow: auto;
+    overflow-x: hidden;
+    box-sizing: border-box;
+
+    &_border {
+      height: 2px;
+      background: #F7FAFB;
+      margin-top: 16px;
+    }
+
+    h2 {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 15px;
+      text-transform: uppercase;
+      color: #062436;
+      margin: 16px 0 0 20px;
+      // margin-bottom: 10px;
+    }
+
+    p {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 24px;
+      text-transform: uppercase;
+      color: #062436;
+      // margin-bottom: 16px;
+      margin: 16px 0 0 20px;
+    }
+
+    .body__item {
+      // margin-top: 20px;
+
+      &_border {
+        height: 1px;
+        background: #F0F5F7;
+        margin-top: 20px;
+      }
+
+      details {
+        padding: 20px 0 0 20px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 19px;
+        // padding-right: 250px;
+
+        div {
+          padding-right: 250px;
+        }
+
+        & summary {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          margin-bottom: 10px;
+          cursor: pointer;
+
+          img  {
+            padding-right: 20px;
+            transition: 0.6s;
+          }
+        }
+      }
+
+      details[open]  {
+        color:#000000; 
+        background: #F3FCFF;
+      }
+      details[open] summary img {
+        padding-left: 20px;
+        transform: rotate(180deg);
+        transition: 0.6s;
+      }
+    }
+  }
+}
