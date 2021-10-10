@@ -3,7 +3,7 @@ import React from 'react';
 import './sidebar.scss';
 
 import logo from '../../assets/img/logo.svg';
-import domens from '../../assets/img/domens.svg';
+import domens from '../../assets/img/icon_domens.svg';
 import help from '../../assets/img/help.svg';
 import user from '../../assets/img/user.svg';
 import vps from '../../assets/img/vps.svg';
