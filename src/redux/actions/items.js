@@ -8,6 +8,7 @@ export const fetchContent = () => (dispatch) => {
 
       dispatch(setTitle([...data.request.responseXML.getElementsByTagName('item')]))
     })
+    .catch(err => console.log(err))
 
 }
 
